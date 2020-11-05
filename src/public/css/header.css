@@ -1,0 +1,20 @@
+body{
+	margin:0;
+}
+.user{
+	font-family: 'Allura';
+	background-color:green;
+	height: 100px;	
+}
+.user h3{
+	padding: 25px;
+	margin:0;
+	float:left;
+	font-size: 40px;
+}
+#user-name{
+	float:right;
+	padding:30px;
+	font-size: 30px;
+	margin:0;
+}

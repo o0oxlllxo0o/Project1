@@ -1,0 +1,41 @@
+
+<div id="id01" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer">
+      <img src="image/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+      <button id="button-login" type="button">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </div>
+</div>
+
+<button class="open-button" onclick="openForm()">Chat<span id="newsMasage"></span></button>
+
+<div class="chat-popup" id="myForm">
+  <div class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <div  id="message-out"></div>
+    <input placeholder="Type message.." id="message-input"></input>
+
+    <button type="button" class="btn" id="send">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </div>
+</div>
+<div id="ListOl">
+  <h2>Online</h2>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+  <ul id="myUL">
+</div>
+</ul>
