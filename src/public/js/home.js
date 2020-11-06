@@ -34,7 +34,7 @@ socket.on('list',function(data){
     
 })
 socket.on('name',function(data){
-    user_name.innerHTML="Welcome "+"<b>"+data+"</b>";
+    user_name.innerHTML="<b>"+data+"</b>";
     document.getElementById('id01').style.display="none";
 })
 /////////////////////////////////////////////////////////
@@ -82,9 +82,7 @@ socket.on("server-send",function(data){
 	console.log(data);
 })
 //////////////////////////////////////////////////////////////
-socket.on('remove',function(data){
 
-})
 //////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////
