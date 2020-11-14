@@ -1,7 +1,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
-/* Button used to open the chat form - fixed at the bottom of the page */
+
 .open-button {
   background-color: #555;
   color: white;
@@ -15,7 +15,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width: 360px;
 }
 
-/* The popup chat - hidden by default */
+
 .chat-popup {
   display: none;
   position: fixed;
@@ -25,14 +25,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   z-index: 9;
 }
 
-/* Add styles to the form container */
+
 .form-container {
   width: 800px;
   padding: 10px;
   background-color: white;
 }
 
-/* Full-width textarea */
+
 #message-out {
   width: 100%;
   padding: 15px;
@@ -81,13 +81,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
   min-height: 20px;
 }
 
-/* When the textarea gets focus, do something */
 .form-container textarea:focus {
   background-color: #ddd;
   outline: none;
 }
 
-/* Set a style for the submit/send button */
+
 .form-container .btn {
   background-color: #4CAF50;
   color: white;
@@ -99,17 +98,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
+
 .form-container .cancel {
   background-color: red;
 }
 
-/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
 
-/*The list people online*/
 * {
   box-sizing: border-box;
 }
@@ -136,7 +133,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
+  margin-top: -1px; 
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
