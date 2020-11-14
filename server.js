@@ -59,8 +59,7 @@ io.on("connection",function(socket){
 		}
 		//Ten khong hop le
 		else{
-			console.log("error");
-			socket.emit("Erorr",ok)
+			socket.emit("Error",ok)
 		} 
 		console.log(list);
 	})

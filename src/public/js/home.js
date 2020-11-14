@@ -130,7 +130,7 @@ function myFunction() {
 }
 //////////////////////////////////
 socket.on("Error",function(data){
-   if(!data){
+   if(data==false){
     alert("Ten dang nhap da co nguoi dung");
    }
 });
