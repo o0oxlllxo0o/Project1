@@ -54,7 +54,7 @@ io.on("connection",function(socket){
 		//Ten hop le them vao danh sach
 		if(ok){
 			list.push(data);	
-			socket.broadcast.emit("confirm-name",data);//Gui ten den tat ca nguoi dung online
+			io.sockets.emit("confirm-name",data);//Gui list ten den tat ca nguoi dung online
 			socket.emit("name",data);//Gui lai ten cho chinh nguoi dung
 		}
 		//Ten khong hop le
