@@ -29,8 +29,15 @@ button.addEventListener('click',function(){
 //Xu ly ten nguoi dung
 var user_name=document.getElementById('user-name');         //Lay the co chua ten nguoi dung
 
-    //Xu ly ten nguoi dung khi server chap nhan ten hop le
-    socket.on('confirm-name',function(data){
+//Xu ly khi nhap ten khong hop le
+socket.on("Error",function(data){
+   if(data==false){
+    alert("Ten dang nhap da co nguoi dung");
+   }
+});
+
+//Xu ly ten nguoi dung khi server chap nhan ten hop le
+socket.on('confirm-name',function(data){
     var newPerson=document.createElement('li');             //Tao them mot the de chua ten nguoi dung
     newPerson.innerHTML="<a>" +data+ "</a>";                //Gan ten nguoi dung vao the
     myUL.appendChild(newPerson);                            //Them vao danh sach nguoi dang online
@@ -129,8 +136,3 @@ function myFunction() {
     }
 }
 //////////////////////////////////
-socket.on("Error",function(data){
-   if(data==false){
-    alert("Ten dang nhap da co nguoi dung");
-   }
-});
